@@ -337,7 +337,7 @@ pcbs:
         params:
           reverse: true
           symmetric: false
-          # The naming of the nets on this footprint is different from the Corne schematics.
+          # The naming of the nets on this footprint is different from the Corne schematics..
           A: ""
           B: VCC
           C: GND
