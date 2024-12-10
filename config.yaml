@@ -1,5 +1,5 @@
 meta:
-  engine: 4.0.4
+  engine: 4.0.2
   name: samoklava
   version: 0.3
   author: soundmonster
@@ -40,22 +40,22 @@ points:
             column_net: col_outer
         pinky:
           key:
-            stagger: 0 ky
-            spread: kx
             column_net: col_pinky
         ring:
           key:
-            stagger: 0.7 ky
-            spread: kx
+            stagger: 0.9 ky
+            splay: -6
+            spread: 1.055kx
             column_net: col_ring
         middle:
           key:
-            stagger: 0.2 ky
-            spread: kx
+            stagger: 0.6 ky
+            splay: -4
+            spread: 1.04kx
             column_net: col_middle
         index:
           key:
-            stagger: -0.2 ky
+            stagger: -0.3 ky
             spread: kx
             column_net: col_index
         inner:
@@ -75,12 +75,12 @@ points:
     thumbfan:
       anchor:
         ref: matrix_inner_bottom
-        shift: [-0.5 kx, -1 ky]
+        shift: [-0.95 kx, -1 ky]
       columns:
         near:
           key:
             spread: kx
-            splay: -15
+            splay: -10
             origin: [-0.5 kx, -0.5 ky]
             column_net: col_middle
         home:
@@ -142,7 +142,7 @@ outlines:
   controller_area:
     - what: rectangle
       where:
-        - ref: matrix_inner_number
+        - ref: matrix_outer_top
           # re-tranalte to new anchor position
           shift: [32/2 + 0 kx, 76.5/2 - 4.05 ky]
       size: [32, 76.5]
@@ -293,7 +293,7 @@ pcbs:
         what: promicro_flippable
         where:
           ref:
-            - matrix_inner_number
+            - matrix_outer_top
           shift: [22.5, -12.25]
           rotate: 270
         params:
@@ -303,7 +303,7 @@ pcbs:
         what: pad
         where:
           ref:
-            - matrix_inner_number
+            - matrix_outer_top
           shift: [23, -6]
           rotate: 0
         params:
@@ -317,7 +317,7 @@ pcbs:
         what: pad
         where:
           ref:
-            - matrix_inner_number
+            - matrix_outer_top
           shift: [23, -3]
           rotate: 0
         params:
@@ -331,13 +331,13 @@ pcbs:
         what: trrs_tight
         where:
           ref:
-            - matrix_inner_bottom
-          shift: [32, -15]
+            - matrix_inner_number
+          shift: [0, 15]
           rotate: 270
         params:
           reverse: true
           symmetric: false
-          # The naming of the nets on this footprint is different from the Corne schematics..
+          # The naming of the nets on this footprint is different from the Corne schematics.
           A: ""
           B: VCC
           C: GND
