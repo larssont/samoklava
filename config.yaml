@@ -332,7 +332,7 @@ pcbs:
         where:
           ref:
             - matrix_inner_number
-          shift: [0, 15]
+          shift: [0, 0]
           rotate: 270
         params:
           reverse: true
