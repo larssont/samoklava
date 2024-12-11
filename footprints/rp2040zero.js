@@ -61,7 +61,7 @@ module.exports = {
     const ROUNDRECT_RRATIO = 0.25;
 
     // Pin-specific variable attributes
-    const pins = [
+    const pinAttrs = [
         { n: 1, x: 17.78, y: -22.86, w: 2.6, h: 1.6, offsetX: 0.6, offsetY: 0, str: p.GP0.str, side: "right"},
         { n: 2, x: 17.78, y: -20.32, w: 2.6, h: 1.6, offsetX: 0.6, offsetY: 0, str: p.GP1.str, side: "right"},
         { n: 3, x: 17.78, y: -17.78, w: 2.6, h: 1.6, offsetX: 0.6, offsetY: 0, str: p.GP2.str, side: "right"},
@@ -91,7 +91,7 @@ module.exports = {
       return `
         ${'' /* pin names */}
         ${
-            pins.map(pin => `
+            pinAttrs.map(pin => `
                 (fp_text user ${pin.str} (at ${pin.x} ${pin.y - 2.18} ${p.rot + 90}) 
                 (layer F.SilkS) 
                 (effects (font (size 0.8 0.8) (thickness 0.15))))
@@ -100,7 +100,7 @@ module.exports = {
 
         ${'' /* actual pins */}
         ${
-            pins.map(pin => `
+            pinAttrs.map(pin => `
                 (pad ${pin.n} thru_hole roundrect (at ${pin.x} ${pin.y} ${p.rot}) 
                 (size ${pin.w} ${pin.h}) 
                 (drill ${DRILL} (offset ${pin.offsetX} ${pin.offsetY})) 
