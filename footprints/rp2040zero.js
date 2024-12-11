@@ -60,31 +60,7 @@ module.exports = {
     function pins(def_neg, def_pos) {
       return `
         ${'' /* pin names */}
-        (fp_text user ${p.GP0.str} (at 14.78 -22.86 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user ${p.GP1.str} (at 14.78 -20.32 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user ${p.GP2.str} (at 14.78 -17.78 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user ${p.GP3.str} (at 14.78 -15.24 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user ${p.GP4.str} (at 14.78 -12.7 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user ${p.GP5.str} (at 14.78 -10.16 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user ${p.GP6.str} (at 14.78 -7.62 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user ${p.GP7.str} (at 14.78 -5.08 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user ${p.GP8.str} (at 14.78 -2.54 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
 
-        (fp_text user ${p.GP9.str} (at 15.24 -5.33 ${p.rot + 180}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user ${p.GP10.str} (at 12.7 -5.33 ${p.rot + 180}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user ${p.GP11.str} (at 10.16 -5.33 ${p.rot + 180}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user ${p.GP12.str} (at 7.62 -5.33 ${p.rot + 180}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user ${p.GP13.str} (at 5.08 -5.33 ${p.rot + 180}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-
-        (fp_text user ${p.GP14.str} (at 5.54 -2.54 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user ${p.GP15.str} (at 5.54 -5.08 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user ${p.GP26.str} (at 5.54 -7.62 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user ${p.GP27.str} (at 5.54 -10.16 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user ${p.P5V.str} (at 5.54 -22.86 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user ${p.GND.str} (at 5.54 -20.32 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user ${p.P3V3.str} (at 5.54 -17.78 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user ${p.GP28.str} (at 5.54 -12.7 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
-        (fp_text user ${p.GP29.str} (at 5.54 -15.24 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
 
         ${'' /* actual pins */}
         (pad 1 thru_hole roundrect (at 17.78 -22.86 ${p.rot}) (size 2.6 1.6) (drill 1.0922 (offset 0.6 0)) (layers *.Cu *.Mask) (roundrect_rratio 0.25) ${p.GP0.str})
@@ -133,3 +109,30 @@ module.exports = {
   }
   
 }
+
+
+// (fp_text user ${p.GP0.str} (at 14.78 -22.86 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
+// (fp_text user ${p.GP1.str} (at 14.78 -20.32 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
+// (fp_text user ${p.GP2.str} (at 14.78 -17.78 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
+// (fp_text user ${p.GP3.str} (at 14.78 -15.24 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
+// (fp_text user ${p.GP4.str} (at 14.78 -12.7 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
+// (fp_text user ${p.GP5.str} (at 14.78 -10.16 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
+// (fp_text user ${p.GP6.str} (at 14.78 -7.62 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
+// (fp_text user ${p.GP7.str} (at 14.78 -5.08 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
+// (fp_text user ${p.GP8.str} (at 14.78 -2.54 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
+
+// (fp_text user ${p.GP9.str} (at 15.24 -5.33 ${p.rot + 180}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
+// (fp_text user ${p.GP10.str} (at 12.7 -5.33 ${p.rot + 180}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
+// (fp_text user ${p.GP11.str} (at 10.16 -5.33 ${p.rot + 180}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
+// (fp_text user ${p.GP12.str} (at 7.62 -5.33 ${p.rot + 180}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
+// (fp_text user ${p.GP13.str} (at 5.08 -5.33 ${p.rot + 180}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
+
+// (fp_text user ${p.GP14.str} (at 5.54 -2.54 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
+// (fp_text user ${p.GP15.str} (at 5.54 -5.08 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
+// (fp_text user ${p.GP26.str} (at 5.54 -7.62 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
+// (fp_text user ${p.GP27.str} (at 5.54 -10.16 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
+// (fp_text user ${p.P5V.str} (at 5.54 -22.86 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
+// (fp_text user ${p.GND.str} (at 5.54 -20.32 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
+// (fp_text user ${p.P3V3.str} (at 5.54 -17.78 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
+// (fp_text user ${p.GP28.str} (at 5.54 -12.7 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
+// (fp_text user ${p.GP29.str} (at 5.54 -15.24 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15))))
