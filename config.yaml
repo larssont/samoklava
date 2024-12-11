@@ -269,7 +269,7 @@ pcbs:
           from: "{{colrow}}"
           to: "{{row_net}}"
       mcu_r:
-        what: promicro_flippable
+        what: rp2040zero
         where:
           ref:
             - matrix_outer_top
@@ -290,7 +290,7 @@ pcbs:
           P20: col_pinky
           P21: col_outer
       mcu_l:
-        what: promicro_flippable
+        what: rp2040zero
         where:
           ref:
             - matrix_outer_top
