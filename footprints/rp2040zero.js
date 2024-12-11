@@ -56,7 +56,7 @@ module.exports = {
       (fp_line (start 15.5 -10.5) (end 5 -10.5) (layer Edge.Cuts) (width 0.12))
       
     `
-    // Define constants shared across pins
+    // Define constants shared across pins 
     const DRILL = 1.0922;
     const ROUNDRECT_RRATIO = 0.25;
 
