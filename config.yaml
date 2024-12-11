@@ -269,36 +269,67 @@ pcbs:
           from: "{{colrow}}"
           to: "{{row_net}}"
       mcu_r:
-        what: rp2040zero
+        what: promicro_flippable
         where:
           ref:
             - matrix_outer_top
           shift: [20, -11]
           rotate: 270
         params:
-          # orientation: up
-          # silk_layer: B.SilkS
-          GP0: row_number
-          GP1: row_top
-          GP2: row_home
-          GP3: row_bottom
-          GP4: row_thumb
-          GP5: col_inner
-          GP6: col_index
-          GP7: col_middle
-          GP8: col_ring
-          GP9: col_pinky
-          GP10: col_outer
+          orientation: up
+          silk_layer: B.SilkS
+          P4: row_number
+          P5: row_top
+          P6: row_home
+          P7: row_bottom
+          P8: row_thumb
+          P14: col_inner
+          P15: col_index
+          P18: col_middle
+          P19: col_ring
+          P20: col_pinky
+          P21: col_outer
       mcu_l:
-        what: rp2040zero
+        what: promicro_flippable
         where:
           ref:
             - matrix_outer_top
           shift: [22.5, -12.25]
           rotate: 270
-        # params:
-        #   orientation: down
-        #   silk_layer: F.SilkS
+        params:
+          orientation: down
+          silk_layer: F.SilkS
+      # mcu_r:
+      #   what: rp2040zero
+      #   where:
+      #     ref:
+      #       - matrix_outer_top
+      #     shift: [20, -11]
+      #     rotate: 270
+      #   params:
+      #     # orientation: up
+      #     # silk_layer: B.SilkS
+      #     GP0: row_number
+      #     GP1: row_top
+      #     GP2: row_home
+      #     GP3: row_bottom
+      #     GP4: row_thumb
+      #     GP5: col_inner
+      #     GP6: col_index
+      #     GP7: col_middle
+      #     GP8: col_ring
+      #     GP9: col_pinky
+      #     GP10: col_outer
+      # mcu_l:
+      #   what: rp2040zero
+      #   where:
+      #     ref:
+      #       - matrix_outer_top
+      #     shift: [22.5, -12.25]
+      #     rotate: 270
+      #   # params:
+      #   #   orientation: down
+      #   #   silk_layer: F.SilkS
       pad_plus:
         what: pad
         where:
